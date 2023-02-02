@@ -93,6 +93,48 @@ def gep_vesztett_kisebbEredmeny():
         print("[Kisebb eredmény tesztje]: megbukott")
 
 
+#dontetlen tesztesetek
+def dontetlen_egyenloEredmeny():
+    jatekos = [10, 10]
+    gep = [10, 10]
+    vart_eredmeny = "dontetlen"
+    kapott_eredmeny = eredmeny(jatekos, gep)
+    if kapott_eredmeny == vart_eredmeny:
+        print("[Egyenlő eredmény döntetlenjének tesztje]: teszt sikeres")
+    else:
+        print("[Egyenlő eredmény döntetlenjének tesztje]: megbukott")
+
+def dontetlen_egyenloLapok():
+    jatekos = [10, 6, 3]
+    gep = [10, 5, 4]
+    vart_eredmeny = "gep vesztett"
+    kapott_eredmeny = eredmeny(jatekos, gep)
+    if kapott_eredmeny == vart_eredmeny:
+        print("[Egyenlő lapok döntetlenjének tesztje]: teszt sikeres")
+    else:
+        print("[Egyenlő lapok döntetlenjének tesztje]: megbukott")
+
+def dontetlen_egyenloLapok_TobbMint21():
+    jatekos = [10, 6, 3, 5]
+    gep = [10, 5, 4, 5]
+    vart_eredmeny = "gep vesztett"
+    kapott_eredmeny = eredmeny(jatekos, gep)
+    if kapott_eredmeny == vart_eredmeny:
+        print("[21 felett egyenlő lapok tesztje]: teszt sikeres")
+    else:
+        print("[21 felett egyenlő lapok tesztje]: megbukott")
+
+def dontetlen_egyenloEredmeny_TobbMint21():
+    jatekos = [10, 10, 6]
+    gep = [10, 6, 4, 6]
+    vart_eredmeny = "gep vesztett"
+    kapott_eredmeny = eredmeny(jatekos, gep)
+    if kapott_eredmeny == vart_eredmeny:
+        print("[21 felett egyenlő eredmény tesztje]: teszt sikeres")
+    else:
+        print("[21 felett egyenlő eredmény tesztje]: megbukott")
+
+
 def teszt_esetek():
 
     #Játékos vesztett esetek:
