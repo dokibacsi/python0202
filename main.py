@@ -1,4 +1,4 @@
-def eredmeny():
+def eredmeny(jatekosLapok: [int], gepLapok: [int]):
     pass
 
 def osszeg(kartyak: [int]):
@@ -20,3 +20,4 @@ def jatekos_vesztett():
         print("teszt sikeres")
     else:
         print("megbukott")
+    pass
