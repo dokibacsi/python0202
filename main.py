@@ -13,9 +13,9 @@ def jatekos_vesztett_tobbMintHuszonegy():
     vart_eredmeny = "jatekos vesztett"
     kapott_eredmeny = eredmeny(jatekos, gep)
     if kapott_eredmeny == vart_eredmeny:
-        print("teszt sikeres")
+        print("[Több mint 21 tesztje]: teszt sikeres")
     else:
-        print("megbukott")
+        print("[Több mint 21 tesztje]: megbukott")
     pass
 
 def jatekos_vesztett_kevesebbMintHuszonegy():
@@ -24,9 +24,9 @@ def jatekos_vesztett_kevesebbMintHuszonegy():
     vart_eredmeny = "jatekos vesztett"
     kapott_eredmeny = eredmeny(jatekos, gep)
     if kapott_eredmeny == vart_eredmeny:
-        print("teszt sikeres")
+        print("[Kevesebb mint 21 tesztje]: teszt sikeres")
     else:
-        print("megbukott")
+        print("[Kevesebb mint 21 tesztje]: megbukott")
 
 def jatekos_vesztett_tobbLapbolHuszonegy():
     jatekos = [10, 5, 2, 4]
@@ -34,9 +34,9 @@ def jatekos_vesztett_tobbLapbolHuszonegy():
     vart_eredmeny = "jatekos vesztett"
     kapott_eredmeny = eredmeny(jatekos, gep)
     if kapott_eredmeny == vart_eredmeny:
-        print("teszt sikeres")
+        print("[Több lapból 21 tesztje]: teszt sikeres")
     else:
-        print("megbukott")
+        print("[Több lapból 21 tesztje]: megbukott")
 
 def jatekos_vesztett_kisebbEredmenyMintAGepnek():
     jatekos = [10, 8]
@@ -44,9 +44,9 @@ def jatekos_vesztett_kisebbEredmenyMintAGepnek():
     vart_eredmeny = "jatekos vesztett"
     kapott_eredmeny = eredmeny(jatekos, gep)
     if kapott_eredmeny == vart_eredmeny:
-        print("teszt sikeres")
+        print("[Kisebb eredmény tesztje]: teszt sikeres")
     else:
-        print("megbukott")
+        print("[Kisebb eredmény tesztje]: megbukott")
 
 def teszt_esetek():
     jatekos_vesztett_tobbMintHuszonegy()
